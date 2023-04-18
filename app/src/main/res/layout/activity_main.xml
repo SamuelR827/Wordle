@@ -53,8 +53,7 @@
     <TableRow><LinearLayout style="@style/virtual_keyboard">
             <TextView
                 android:id="@+id/message"
-                style="@style/text_message"
-                android:text="@string/debug_text"/>
+                style="@style/text_message"/>
     </LinearLayout></TableRow>
 
 
