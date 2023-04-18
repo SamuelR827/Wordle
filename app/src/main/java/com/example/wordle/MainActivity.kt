@@ -21,9 +21,34 @@ class MainActivity : AppCompatActivity() {
             return wordList.random()
         }
 
-        val game_message = findViewById<TextView>(R.id.message)
-        val selectedWord = selectWord()
-        game_message.text = getString(R.string.debug_text, selectedWord)
+        fun legitGuess(guess:String):Boolean
+        {
+            return wordList.contains(guess)
+        }
+
+        fun countCharacterOccurrences(str:String):Map<Char, Int>
+        {
+            val wordMap = mutableMapOf<Char, Int>()
+            for (letter in str)
+            {
+                wordMap.putIfAbsent(letter, 0)
+                wordMap[letter] = wordMap[letter]!! + 1
+            }
+            return wordMap
+        }
+
+
+        fun main(){
+            val gameMessage = findViewById<TextView>(R.id.message)
+            val selectedWord = selectWord()
+            gameMessage.text = getString(R.string.debug_text, selectedWord)
+            var userWord: String
+        }
+
+
+        
+
+
 
 
 

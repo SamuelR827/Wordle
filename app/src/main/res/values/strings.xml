@@ -1,4 +1,9 @@
 <resources>
     <string name="app_name">Wordle</string>
     <string name="debug_text">The Word is %s</string>
+    <string name="valid_text">It\'s a word</string>
+    <string name="invalid_text">It\'s not a word</string>
+    <string name="incomplete_text">Enter a complete word</string>
+    <string name="win_text">You win!</string>
+    <string name="lose_text">Sorry! The word was %s</string>
 </resources>
